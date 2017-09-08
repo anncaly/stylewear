@@ -348,6 +348,12 @@ label {
   width: 140px;
 }
 
+.save-btn {
+  margin: 0 auto;
+  width: 140px;
+  margin-top: 40px;
+}
+
 .signup-form {
   margin: 0 auto;
   width: 73%;
@@ -511,5 +517,22 @@ button.change-psw {
 
 .menu-left-lk ul li a:hover, .menu-left-lk ul li a:active {
   color: #414141;
+  font-weight: bold;
+}
+
+.menu-left-lk ul li a.active {
+  font-weight: bold;
+}
+
+.lk-info-item {
+  margin-bottom: 40px;
+}
+
+.lk-info-item .lk-info-item-heading {
+  font-weight: bold;
+}
+
+.lk-info-item .lk-info-item-content-bonus {
+  color: #016600;
   font-weight: bold;
 }
