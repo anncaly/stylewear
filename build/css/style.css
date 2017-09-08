@@ -20,10 +20,11 @@ label {
   font-size: 15px;
 }
 
-.field input {
+.field input[type="text"] {
   width: 343px;
   height: 38px;
   border: 1px solid #e2e2e2;
+  padding: 6px 12px;
 }
 
 .section-title {
@@ -90,23 +91,44 @@ label {
   margin-right: 5px;
 }
 
-.autorization {
+.autorization, .signup-btn {
   margin: 0 auto;
-  width: 310px;
+  width: 220px;
   margin-top: 40px;
 }
 
 .login-btn button {
+  width: 150px;
+}
+
+.signup-btn button {
+  width: 205px;
+}
+
+.green-button, .login-btn button, .signup-btn button {
   height: 33px;
   background-color: #016701;
   border: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  width: 150px;
 }
 
 .login-btn {
   margin: 20px auto;
   width: 150px;
+}
+
+.check {
+  margin-top: 5px;
+  margin-left: -5px;
+}
+
+.check input[type="checkbox"] {
+  float: left;
+  margin: 5px;
+}
+
+.field #phone {
+  text-align: center;
 }
