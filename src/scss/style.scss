@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'ProximaNova'; 
+    src: url(fonts/ProximaNova-Light.otf); 
+   }
+@font-face {
+    font-family: 'ProximaNova'; 
+    src: url(fonts/ProximaNova-Bold.otf); 
+   }
+   @font-face {
+    font-family: 'ProximaNova'; 
+    src: url(fonts/ProximaNova-Reg.otf); 
+   }
+   @font-face {
+    font-family: 'ProximaNova'; 
+    src: url(fonts/ProximaNova-RegIt.otf); 
+   }
 body {
     padding: 0;
     font-family: 'ProximaNova', 'Open Sans', 'Verdana', sans-serif;
@@ -265,6 +281,12 @@ label {
 .login-btn button {
 	@extend .green-button;
 	width: 150px;
+	height: 33px;
+}
+.save-btn button {
+	@extend .green-button;
+	height: 40px;
+	width: 140px;
 }
 
 // signup
@@ -275,9 +297,9 @@ label {
 .signup-btn button {
 	@extend .green-button;
 	width: 205px;
+	height: 33px;
 }
 .green-button {
-	height: 33px;
 	background-color: #016701;
 	border: none;
 	color: #fff;
@@ -296,7 +318,7 @@ label {
 	float: left;
 	margin: 5px;
 }
-.field #phone, .field #email {
+.field #phone, .field #email, .field #birth {
 	text-align: center;
 }
 /* BREADCRUMBS */ 
@@ -319,6 +341,7 @@ label {
 .return-btn button {
 	@extend .green-button;
 	width: 215px;
+	height: 33px;
 }
 .return-form .field {
 	margin-bottom: 25px;
@@ -354,4 +377,57 @@ label {
 }
 #close-socials {
 	width: 8px;
+}
+
+// info
+.lk-info h4 {
+	text-transform: uppercase;
+	margin: 0px 0px 30px 14px;
+}
+.info-form .field {
+	margin-bottom: 45px;
+	padding-left: 0px;
+	label[for=name], label[for=surname], label[for=lastname] {
+		text-transform: none;
+	}
+}
+.info-form .field .additional {
+	margin: 5px 0px -23px 0px;
+	font-size: 13px;
+}
+button.gender {
+	  background-color: #fff;
+    border: 1px solid #e2e2e2;
+    height: 38px;
+    width: 93px;
+    margin-right: 15px;
+}
+button.gender:hover, button.gender:active {
+	  background-color: #016701;
+		color: #fff;
+}
+button.change-psw {
+	background-color: #e2e2e2;
+	border: 1px solid #e2e2e2;
+	height: 38px;
+	width: 180px;
+	color: #4d4d4d;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'ProximaNova', 'Open Sans', 'Verdana', sans-serif;
+}
+.menu-left-lk ul{
+	padding: 0;
+}
+.menu-left-lk ul li {
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+.menu-left-lk ul li a {
+	text-decoration: none;
+	color: #575757;
+}
+.menu-left-lk ul li a:hover, .menu-left-lk ul li a:active {
+	color: #414141;
+	font-weight: bold;
 }
