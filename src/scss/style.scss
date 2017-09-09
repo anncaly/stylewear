@@ -654,3 +654,75 @@ button.change-psw {
 	text-transform: uppercase;
 	margin: 0px 0px 25px;
 }
+
+// lk bonus
+
+.lk-bonus h4 {
+	text-transform: uppercase;
+	margin: 0px 0px 20px;
+	color: #474646;
+}
+.lk-bonus {
+	color: #8d8d8d;
+}
+.lk-bonus-info {
+	margin-bottom: 40px;
+}
+.score {
+	margin-top: -10px;
+}
+.score_info_title {
+	float: left;
+	margin-right: 25px;
+}
+.score_info_title, .score_info_value {
+	line-height: 15px;
+}
+.score_title {
+	font-size: 22px;
+}
+.score_sum {
+	font-size: 40px;
+	margin-top: -9px;
+}
+.bonus_discount {
+	font-size: 22px;
+}
+.bonus_discount_bar {
+	width: 200px;
+	height: 50px;
+}
+.bonus_item {
+	background-color: #e7e7e7;
+	height: 110px;
+	margin-right: -15px;
+	padding: 25px 30px 0px;
+	color: #474646;
+}
+.bonus_list li {
+	margin-bottom: 20px;
+}
+.bonus_list_title {
+	margin: 25px 25px 10px;
+}
+.green_bold {
+	color: #006801;
+	font-weight: bold;
+}
+#pb {
+  box-shadow:  0px -5px 15px -6px rgba(37, 60, 50, 0.56);
+	background: #dcdbd6;
+  width:525px;
+  height:20px;
+  border-radius:10px;
+  overflow:hidden;
+}
+#progress {
+	height:20px;
+	width:157px;
+	background-color: #c4dbaf;
+	border-radius:10px;
+	background: #6db3f2;
+	background: linear-gradient(to bottom, #cee4ba 0%, #c4dbaf 37%, #b8d0a2 51%, #afc898 100%); /* W3C */
+  overflow:hidden;      
+}
