@@ -726,3 +726,23 @@ button.change-psw {
 	background: linear-gradient(to bottom, #cee4ba 0%, #c4dbaf 37%, #b8d0a2 51%, #afc898 100%); /* W3C */
   overflow:hidden;      
 }
+
+// delivery
+
+.delivery_items {
+	background-color: #f5f5f5;
+	height: 100%;
+}
+.delivery_table table {
+	width: 100%;
+}
+.delivery_table tr {
+	height: 105px;
+}
+.delivery_table td:first-child {
+	width: 28%;
+}
+.delivery_table td {
+	width: 18%;
+}
+
