@@ -292,6 +292,10 @@ label {
   text-transform: uppercase;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .login-form {
   margin: 0 auto;
   width: 73%;
@@ -497,12 +501,51 @@ label {
   font-size: 13px;
 }
 
-.socials-links-right {
+.socials_links_right {
   width: 30px;
   position: fixed;
   right: 0;
+  top: 50%;
+  z-index: 3000;
+}
+
+.socials_links_right a {
+  margin-right: 5px;
+  width: 33px;
+  height: 33px;
   display: block;
-  top: 20%;
+  float: left;
+  background: url(../img/sprite.png);
+  cursor: pointer;
+}
+
+.socials_links_right .close_links_right a {
+  width: 12px;
+  height: 12px;
+}
+
+.socials_links_right .close_links_right a {
+  background-position: -124px -342px;
+}
+
+.socials_links_right .vk_links_right a {
+  background-position: -103px -657px;
+}
+
+.socials_links_right .fb_links_right a {
+  background-position: -102px -222px;
+}
+
+.socials_links_right .ok_links_right a {
+  background-position: -102px -302px;
+}
+
+.socials_links_right .insta_links_right a {
+  background-position: -102px -262px;
+}
+
+.socials_links_right .youtube_links_right a {
+  background-position: -99px -697px;
 }
 
 #close-socials {
@@ -1021,9 +1064,6 @@ button.gender:hover, button.gender:active {
   .login .socials {
     margin-bottom: 15px;
   }
-  .arrows {
-    margin: 0 auto;
-  }
   .signup-btn button {
     margin-top: 10px;
   }
@@ -1042,6 +1082,13 @@ button.gender:hover, button.gender:active {
     margin-bottom: 20px;
     margin-top: 10px;
   }
+  .arrow, .arrow_active, .arrow_first {
+    width: 270px;
+    margin-bottom: 10px;
+  }
+  .socials_links_right {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1059,11 +1106,14 @@ button.gender:hover, button.gender:active {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 500px) and (max-width: 991px) {
   .arrow, .arrow_active, .arrow_first {
     width: 335px;
     margin-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 991px) {
   .order_number, .confirm_delivery {
     margin-top: 20px;
   }

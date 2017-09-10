@@ -11,8 +11,8 @@
     src: url(../fonts/ProximaNova-Reg.otf); 
    }
 body {
-    padding: 0;
-    font-family: 'ProximaNova', 'Open Sans', 'Verdana', sans-serif;
+  padding: 0;
+  font-family: 'ProximaNova', 'Open Sans', 'Verdana', sans-serif;
 }
 
 .navbar {
@@ -240,6 +240,9 @@ label {
     text-transform: uppercase;
 }
 
+body {
+  overflow-x: hidden;
+}
 // login
 .login-form {
 	margin: 0 auto;
@@ -414,13 +417,46 @@ label {
 	margin-top: 45px;
 	font-size: 13px;
 }
-.socials-links-right {
-    width: 30px;
-    position: fixed;
-    right: 0;
-    display: block;
-    top: 20%;
+.socials_links_right {
+	width: 30px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 3000;
+	a {
+		margin-right: 5px;
+		width: 33px;
+		height: 33px;
+		display: block;
+		float: left;
+		background: url(../img/sprite.png);
+		cursor: pointer;
+	}
+	.close_links_right a {
+		width: 12px;
+		height: 12px;
+	}
+	.close_links_right a {
+  	background-position: -124px -342px;
+	}
+	.vk_links_right a {
+  	background-position: -103px -657px;
+	}
+	.fb_links_right a {
+  	background-position: -102px -222px;
+	}
+	.ok_links_right a {
+  	background-position: -102px -302px;
+	}
+	.insta_links_right a {
+  	background-position: -102px -262px;
+	}
+	.youtube_links_right a {
+  	background-position: -99px -697px;
+	}
 }
+
+
 #close-socials {
 	width: 8px;
 }
@@ -871,9 +907,6 @@ button.gender:hover, button.gender:active {
 	.login .socials {
 		margin-bottom: 15px;
 	}
-	.arrows {
-		margin: 0 auto;
-	}
 	.signup-btn button {
 		margin-top: 10px;
 	}
@@ -892,6 +925,13 @@ button.gender:hover, button.gender:active {
 		margin-bottom: 20px;
 		margin-top: 10px;
 	}
+	.arrow, .arrow_active, .arrow_first {
+  	width: 270px;
+  	margin-bottom: 10px;
+	}
+	.socials_links_right {
+		display: none;
+	}
 } 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	.arrow, .arrow_active, .arrow_first {
@@ -907,11 +947,13 @@ button.gender:hover, button.gender:active {
     width: 300px;
 	}
 }
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 500px) and (max-width: 991px) {
 	.arrow, .arrow_active, .arrow_first {
 		width: 335px;
 		margin-bottom: 10px;
 	}
+}
+@media screen and (max-width: 991px) {
 	.order_number, .confirm_delivery {
     margin-top: 20px;
 	}
