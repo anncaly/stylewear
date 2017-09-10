@@ -1,152 +1,191 @@
 <!DOCTYPE html> 
-<html lang="ru">
-  <head> 
-    <title></title> 
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
-  </head> 
-  <body>
+<html lang="ru"> 
+<head> 
+  <title></title> 
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head> 
+<body>
   <header>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4 left">
+                  <a href="/"><img src="/bitrix/templates/stylewear_main/img/stylewear-logo.jpg" class="logo"></a>
+              </div>
+              <div class="col-sm-6 middle">
+                  <div class="row">
+                      <div class="col-sm-8 text-center">
+                          <div class="number">8 (495) 123 45 67</div>
+                          <div class="callback"><a href="#callback">Заказать обратный звонок</a></div>
+                          
+                      </div>
+                      <div class="col-sm-4 del-pay">
+                          <div class="delivery">Доставка</div>
+                          <div class="clearfix"></div>
+                          <div class="pay">Оплата</div>
+                      </div>                            
+                  </div>
+              </div>     
+              <div class="col-sm-2">
+                  <div class="cart">
+                      <div class="cart-icon"></div>
+                      <div class="cart-content">
+                          <div class="goods">2 товара</div>
+                          <div class="sum">(23 500 р.)</div>
+                      </div>
+                  </div>
+              </div>                    
+          </div>
+      </div>
+  </header>
+  <section id="" class="sub-header section">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-7 submenu">
+                  <div id="submenu" class="navbar-mod navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                      <li>
+                        <a href="#link1">Одежда</a>
+                      </li>
+                      <li>
+                        <a href="#link2">Обувь</a>
+                      </li>
+                      <li>
+                        <a href="#link3">Аксессуары</a>
+                      </li>
+                      <li>
+                        <a href="#link4">Красота</a>
+                      </li>                  
+                    </ul>
+                  </div><!--/.navbar-collapse -->                    
+              </div>
+              <div class="col-sm-5 search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Поиск по сайту...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><i class="fa fa-search fa-md"></i> Найти</button>
+                    </span>
+                  </div><!-- /input-group -->                        
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="lk-favorites">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 left">
-          <a href="/"><img src="/bitrix/templates/stylewear_main/img/stylewear-logo.jpg" class="logo"></a>
-        </div>
-        <div class="col-sm-6 middle">
-          <div class="row">
-            <div class="col-sm-8 text-center">
-              <div class="number">8 (495) 123 45 67</div>
-              <div class="callback"><a href="#callback">Заказать обратный звонок</a></div>
-            </div>
-            <div class="col-sm-4 del-pay">
-                <div class="delivery">Доставка</div>
-                <div class="clearfix"></div>
-                <div class="pay">Оплата</div>
-            </div>                            
-          </div>
-        </div>     
-          <div class="col-sm-2">
-              <div class="cart">
-                  <div class="cart-icon"></div>
-                  <div class="cart-content">
-                      <div class="goods">2 товара</div>
-                      <div class="sum">(23 500 р.)</div>
-                  </div>
-              </div>
-          </div>                    
-      </div>
-    </div>
-</header>
-<section id="" class="sub-header section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-7 submenu">
-        <div id="submenu" class="navbar-mod navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#link1">Одежда</a>
-            </li>
-            <li>
-              <a href="#link2">Обувь</a>
-            </li>
-            <li>
-              <a href="#link3">Аксессуары</a>
-            </li>
-            <li>
-              <a href="#link4">Красота</a>
-            </li>                  
-          </ul>
-        </div><!--/.navbar-collapse -->                    
-      </div>
-      <div class="col-sm-5 search">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Поиск по сайту...">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button"><i class="fa fa-search fa-md"></i> Найти</button>
-            </span>
-          </div><!-- /input-group -->                        
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="breadcrumbs">
-  <div class="container">
-    <div class="row">        
         <div class="col-sm-12">
-          <p><a href="#">Главная</a> <span class="delimeter">/</span>  <a href="#" class="active">Отслеживание заказа</a> </p>
-        </div>
-    </div>
-  </div>
-</section>
-<section class="tracking">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="arrows">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="arrow_first">Оформление заказа</div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="arrow">Поступление заказа</div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="arrow arrow_active">Доставка</div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="arrow">Завершение заказа</div>
+          <div class="section-title">
+            <h3>Личный кабинет</h3>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div class="order_number">
-          Номер Вашего заказа <span>FJO250SFFE59</span>
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <div class="menu-left-lk">
+            <ul>
+            <li><a href="#" class="active">Избранное (по умолчанию)</a></li>
+            <li><a href="#">Мои заказы</a></li>
+            <li><a href="#">Мои данные</a></li>
+            <li><a href="#">Бонусная программа</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <h4>Избранное</h4>
+            <div class="catalog-favorites">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-4 product_item_favorites">
+                    <div class="pic">
+                      <div class="badges">
+                            <div class="badge badge-new"></div>
+                            <div class="badge badge-hot"></div>
+                            <div class="badge sale-15"></div>
+                            <div class="badge sale-20"></div>
+                            <div class="badge sale-25"></div>
+                        </div>                            
+                        <img src="img/fav1.png" class="">
+                    </div>
+                    <div class="title">Название товара</div>
+                    <div class="desc">краткое описание</div>
+                    <div class="prices">
+                        <div class="price-old">5250</div>
+                        <div class="price">1000 ₽</div>
+                    </div>
+                    <div class="params">
+                        <div class="add-fav-btn">
+                            <button type="button">Добавить в корзину</button>
+                        </div>
+                        <div class="favorites text-center">
+                          <button class="remove_favorite">Убрать из избранного</button>
+                        </div>                                       
+                    </div>    
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 product_item_favorites">
+                    <div class="pic">
+                      <div class="badges">
+                        <div class="badge sale-15"></div>
+                        <div class="badge sale-20"></div>
+                        <div class="badge sale-25"></div>
+                      </div>                            
+                      <img src="img/fav2.png" class="">
+                    </div>
+                    <div class="title">Название товара</div>
+                    <div class="desc">краткое описание</div>
+                    <div class="prices">
+                        <div class="price-old">5250</div>
+                        <div class="price">1000 ₽</div>
+                    </div>
+                    <div class="params">
+                        <div class="add-fav-btn">
+                            <button type="button">Добавить в корзину</button>
+                        </div>
+                        <div class="favorites text-center">
+                          <div class="remove_favorite">Убрать из избранного</div>
+                        </div>                                      
+                    </div>    
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 product_item_favorites">
+                    <div class="pic">
+                      <div class="badges">
+                            <div class="badge badge-new"></div>
+                            <div class="badge badge-hot"></div>
+                            <div class="badge sale-15"></div>
+                            <div class="badge sale-20"></div>
+                            <div class="badge sale-25"></div>
+                        </div>                            
+                        <img src="img/fav3.png" class="">
+                    </div>
+                    <div class="title">Название товара</div>
+                    <div class="desc">краткое описание</div>
+                    <div class="prices">
+                        <div class="price-old">5250</div>
+                        <div class="price">1000 ₽</div>
+                    </div>
+                    <div class="params">
+                        <div class="add-fav-btn">
+                            <button type="button">Добавить в корзину</button>
+                        </div>
+                        <div class="favorites text-center">
+                          <div class="remove_favorite">Убрать из избранного</div>
+                        </div>                                       
+                    </div>    
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="confirm_delivery">
-          <button type="button">Подтвердить получение товара</button>
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <div class="delivery_status">Статус: <span class="green_bold">Ваш заказ уже у курьера</span></div>
-      </div>
-      <div class="col-xs-12">
-        <div class="delivery_info">
-          <p>1. Если Вы довольны полученными товарами, нажмите кнопку «Подтвердить получение товара».</p>
-          <p>2. Если Вы не получили товар или недовольны его состоянием, Вы можете <a href="#"><span>написать нам</span></a></p>
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <p class="delivery_time">Курьер свяжется с Вами в указанное Вами время: <span>15-00 — 21:00 24.08.2017</span></p>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-offset-1 col-md-10">
-        <div class="conditions">
-          <p>Условия возврата non nisi ac, volutpat fermentum massa. Fusce id risus fringilla, pulvinar felis non, auctor magna. Phasellus feugiat odio ligula, eget sollicitudin augue ultricies vel. Aenean nec sagittis purus. Praesent pharetra odio vel enim condimentum, nec tempor odio elementum. Mauris eget quam nisl. Integer pretium sapien id dapibus aliquam. Morbi a nisi ut sapien gravida euismod quis eu urna. Sed interdum pharetra feugiat. Quisque id elementum lorem. Nullam imperdiet ante sed eros laoreet, nec blandit urna dictum. Suspendisse blandit turpis neque, ut rutrum nibh fermentum vel. Donec cursus, quam quis porta mattis, sapien eros pretium libero, vel tristique est augue non tortor.</p>
-        </div>
-      </div>
-    </div>
-    <div class="socials_links_right">
-      <div class="close_links_right"><a href="#"></a></div>
-      <div class="vk_links_right"><a href="#"></a></div>
-      <div class="fb_links_right"><a href="#"></a></div>
-      <div class="ok_links_right"><a href="#"></a></div>
-      <div class="insta_links_right"><a href="#"></a></div>
-      <div class="youtube_links_right"><a href="#"></a></div>
-    </div>
-  </div>
-</section>
+  </section>
 </body>
 <footer>
 </footer>
