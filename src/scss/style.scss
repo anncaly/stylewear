@@ -304,10 +304,14 @@ label {
 .login .authorization {
 	width: 305px;
 }
-.authorization, .signup-btn {
+.authorization {
 	margin: 0 auto;
-	// width: 220px;
 	margin-top: 40px;
+}
+.login-btn {
+	margin: 20px auto;
+  width: 150px;
+  margin-bottom: 40px;
 }
 .login-btn button {
 	@extend .green-button;
@@ -329,13 +333,19 @@ label {
 
 // signup
 .signup-form {
-		margin: 0 auto;
-    width: 73%;
+	margin: 0 auto;
+  width: 73%;
 }
 .signup-btn button {
 	@extend .green-button;
-	width: 205px;
+	width: 215px;
 	height: 33px;
+}
+.signup-btn {
+	margin: 0 auto;
+	width: 215px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 .green-button {
 	background-color: #016701;
@@ -343,10 +353,6 @@ label {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
-}
-.login-btn {
-	  margin: 20px auto;
-    width: 150px;
 }
 .check {
 	margin-top: 5px;
@@ -844,7 +850,7 @@ button.change-psw {
 	font-size: 17px;
 }
 @media screen and (max-width: 499px) {
-	.login .field {
+	.login .field, .signup .field {
 		width: 255px;
 		margin: 0 auto;
 		padding-left: 0px;
@@ -852,6 +858,9 @@ button.change-psw {
 	.login .field input[type="text"] {
     width: 250px;
 	}
+	.signup .field input[type="text"] {
+    width: 250px;
+	} 
 	.login .authorization {
 		width: 220px;
 	}
@@ -861,6 +870,12 @@ button.change-psw {
 	.arrows {
 		margin: 0 auto;
 	}
+	.signup-btn button {
+		margin-top: 10px;
+	}
+	.signup .section-title, .login .section-title {
+		margin-bottom: 0px;
+	}
 } 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	.arrow, .arrow_active, .arrow_first {
@@ -869,6 +884,9 @@ button.change-psw {
 	.login .field input[type="text"] {
     width: 300px;
 	}
+	.signup .field input[type="text"] {
+    width: 300px;
+	} 
 }
 @media screen and (max-width: 991px) {
 	.arrow, .arrow_active, .arrow_first {
@@ -881,7 +899,7 @@ button.change-psw {
 	.delivery_status {
     margin: 20px 0px 14px;
 	}
-	.login .field {
+	.login .field, .signup .field {
     margin-bottom: 15px;
 	}
 }

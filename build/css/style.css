@@ -373,9 +373,15 @@ label {
   width: 305px;
 }
 
-.authorization, .signup-btn {
+.authorization {
   margin: 0 auto;
   margin-top: 40px;
+}
+
+.login-btn {
+  margin: 20px auto;
+  width: 150px;
+  margin-bottom: 40px;
 }
 
 .login-btn button {
@@ -401,8 +407,15 @@ label {
 }
 
 .signup-btn button {
-  width: 205px;
+  width: 215px;
   height: 33px;
+}
+
+.signup-btn {
+  margin: 0 auto;
+  width: 215px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .green-button, .login-btn button, .save-btn button, .signup-btn button, .return-btn button, .add-fav-btn button {
@@ -411,11 +424,6 @@ label {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.login-btn {
-  margin: 20px auto;
-  width: 150px;
 }
 
 .check {
@@ -992,12 +1000,15 @@ button.change-psw {
 }
 
 @media screen and (max-width: 499px) {
-  .login .field {
+  .login .field, .signup .field {
     width: 255px;
     margin: 0 auto;
     padding-left: 0px;
   }
   .login .field input[type="text"] {
+    width: 250px;
+  }
+  .signup .field input[type="text"] {
     width: 250px;
   }
   .login .authorization {
@@ -1009,6 +1020,12 @@ button.change-psw {
   .arrows {
     margin: 0 auto;
   }
+  .signup-btn button {
+    margin-top: 10px;
+  }
+  .signup .section-title, .login .section-title {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1016,6 +1033,9 @@ button.change-psw {
     width: 225px;
   }
   .login .field input[type="text"] {
+    width: 300px;
+  }
+  .signup .field input[type="text"] {
     width: 300px;
   }
 }
@@ -1031,7 +1051,7 @@ button.change-psw {
   .delivery_status {
     margin: 20px 0px 14px;
   }
-  .login .field {
+  .login .field, .signup .field {
     margin-bottom: 15px;
   }
 }
