@@ -1,67 +1,132 @@
 <!DOCTYPE html> 
 <html lang="ru"> 
-	<head> 
-	  <title>Tajam</title> 
-		<meta charset="utf-8" />
-		<meta name="description" content="" />
-  	<meta name="keywords" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<title></title>
-	</head> 
-	<body>
-<section class="login">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="section-title">
-      		<h3>Авторизация</h3>
-      	</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-      	<div class="form-wrapper">
-          <form class="login-form">
-          	<div class="col-xs-12 col-md-6">
-		          <div class="field">
-		        		<label for="email">E-mail</label>
-		            <input type="text" id="email" placeholder="">
-		           </div>
-          	</div>
-          	<div class="col-xs-12 col-md-6">
-          		<div class="field">
-          			<label for="pswd">Пароль</label>
-              	<input type="text" id="pswd" placeholder="">
-              	<div class="additional">
-              		<div class="restore-psw">
-              			<a href="">Восстановить пароль</a>
-              		</div>
-	              	<div class="socials">
-	              		<a href="#">Авторизация через соцсети</a>
-	              		<div class="social-links">
-			            		<a href="#"><img src="img/vk.png" alt="vk"></a>
-			            		<a href="#"><img src="img/ok.png" alt="ok"></a>
-			            		<a href="#"><img src="img/mail.png" alt="mail"></a>
-			            		<a href="#"><img src="img/fb.png" alt="fb"></a>
-	              		</div>
-	              	</div>
-              	</div>
-              </div>
-          	</div>
-            <div class="col-sm-12">
-							<div class="autorization">
-							<div class="captcha"><img src="img/captcha.png" alt="captcha"></div>
-							<div class="login-btn"><button type="submit">Отправить</button></div>
-							</div>
-						</div>
-          </form>   
-      	</div>
+  <head> 
+    <title></title> 
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head> 
+<body>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 left">
+        <a href="/"><img src="/bitrix/templates/stylewear_main/img/stylewear-logo.jpg" class="logo"></a>
       </div>
-  	</div>
+      <div class="col-sm-6 middle">
+        <div class="row">
+          <div class="col-sm-8 text-center">
+            <div class="number">8 (495) 123 45 67</div>
+            <div class="callback"><a href="#callback">Заказать обратный звонок</a></div>
+          </div>
+          <div class="col-sm-4 del-pay">
+              <div class="delivery">Доставка</div>
+              <div class="clearfix"></div>
+              <div class="pay">Оплата</div>
+          </div>                            
+        </div>
+      </div>     
+        <div class="col-sm-2">
+            <div class="cart">
+                <div class="cart-icon"></div>
+                <div class="cart-content">
+                    <div class="goods">2 товара</div>
+                    <div class="sum">(23 500 р.)</div>
+                </div>
+            </div>
+        </div>                    
+    </div>
+  </div>
+</header>
+<section id="" class="sub-header section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 submenu">
+        <div id="submenu" class="navbar-mod navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#link1">Одежда</a>
+            </li>
+            <li>
+              <a href="#link2">Обувь</a>
+            </li>
+            <li>
+              <a href="#link3">Аксессуары</a>
+            </li>
+            <li>
+              <a href="#link4">Красота</a>
+            </li>                  
+          </ul>
+        </div><!--/.navbar-collapse -->                    
+      </div>
+      <div class="col-sm-5 search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Поиск по сайту...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="fa fa-search fa-md"></i> Найти</button>
+            </span>
+          </div><!-- /input-group -->                        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section-title">
+          <h3>Авторизация</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-wrapper">
+          <form class="login-form">
+            <div class="col-xs-12 col-md-6">
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="">
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="field">
+                <label for="pswd">Пароль</label>
+                <input type="text" id="pswd" placeholder="">
+                <div class="additional">
+                  <div class="restore-psw">
+                    <a href=""><span>Восстановить пароль</span></a>
+                  </div>
+                  <div class="socials">
+                    <a href="#"><span>Авторизация через соцсети</span></a>
+                    <div class="social_links_auth">
+                      <div class="vk_auth"><a href="#"></a></div>
+                      <div class="ok_auth"><a href="#"></a></div>
+                      <div class="mail_auth"><a href="#"></a></div>
+                      <div class="fb_auth"><a href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="authorization">
+              <div class="captcha"><img src="img/captcha.png" alt="captcha"></div>
+              <div class="login-btn"><button type="submit">Отправить</button></div>
+              </div>
+            </div>
+          </form>   
+        </div>
+      </div>
+    </div>
 </div>
 </section>
 </body>

@@ -297,18 +297,37 @@ label {
   width: 73%;
 }
 
-.additional .restore-psw a, .socials a {
-  font-size: 14px;
-  text-decoration: underline;
-  color: #565856;
-}
-
-.additional .restore-psw a:hover, .socials a:hover {
-  color: #026402;
+.login .field {
+  margin: 0 auto;
 }
 
 .additional {
-  margin-top: 25px;
+  margin-top: 20px;
+}
+
+.additional .restore-psw a, .additional .socials a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.additional .socials a {
+  color: #d1d1d1;
+}
+
+.additional .socials a span {
+  color: #565856;
+}
+
+.additional .restore-psw a {
+  color: #cfd9c6;
+}
+
+.additional .restore-psw a:hover {
+  text-decoration: none;
+}
+
+.additional .restore-psw a span {
+  color: #3f671d;
 }
 
 .restore-psw {
@@ -320,23 +339,49 @@ label {
   float: left;
 }
 
-.social-links {
-  margin-top: 7px;
+.social_links_auth {
+  margin-top: 8px;
 }
 
-.social-links a {
+.social_links_auth a {
   margin-right: 5px;
+  width: 33px;
+  height: 33px;
+  display: block;
+  float: left;
+  background: url(../img/sprite.png);
+  cursor: pointer;
 }
 
-.autorization, .signup-btn {
+.social_links_auth .vk_auth a {
+  background-position: -102px -180px;
+}
+
+.social_links_auth .ok_auth a {
+  background-position: -102px -138px;
+}
+
+.social_links_auth .mail_auth a {
+  background-position: -102px -96px;
+}
+
+.social_links_auth .fb_auth a {
+  background-position: -102px -54px;
+}
+
+.login .authorization {
+  width: 305px;
+}
+
+.authorization, .signup-btn {
   margin: 0 auto;
-  width: 220px;
   margin-top: 40px;
 }
 
 .login-btn button {
   width: 150px;
   height: 33px;
+  letter-spacing: 1px;
 }
 
 .save-btn button {
@@ -440,6 +485,7 @@ label {
   color: #747474;
   text-align: center;
   margin-top: 45px;
+  font-size: 13px;
 }
 
 .socials-links-right {
@@ -945,9 +991,32 @@ button.change-psw {
   font-size: 17px;
 }
 
+@media screen and (max-width: 499px) {
+  .login .field {
+    width: 255px;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+  .login .field input[type="text"] {
+    width: 250px;
+  }
+  .login .authorization {
+    width: 220px;
+  }
+  .login .socials {
+    margin-bottom: 15px;
+  }
+  .arrows {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .arrow, .arrow_active, .arrow_first {
     width: 225px;
+  }
+  .login .field input[type="text"] {
+    width: 300px;
   }
 }
 
@@ -961,6 +1030,9 @@ button.change-psw {
   }
   .delivery_status {
     margin: 20px 0px 14px;
+  }
+  .login .field {
+    margin-bottom: 15px;
   }
 }
 
