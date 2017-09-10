@@ -452,7 +452,7 @@ button.gender:hover, button.gender:active {
 	  background-color: #016701;
 		color: #fff;
 }
-button.change-psw {
+.change-psw button{
 	background-color: #e2e2e2;
 	border: 1px solid #e2e2e2;
 	height: 38px;
@@ -851,7 +851,7 @@ button.change-psw {
 	font-size: 17px;
 }
 @media screen and (max-width: 499px) {
-	.login .field, .signup .field {
+	.login .field, .signup .field, .lk-info .field {
 		width: 255px;
 		margin: 0 auto;
 		padding-left: 0px;
@@ -861,7 +861,10 @@ button.change-psw {
 	}
 	.signup .field input[type="text"] {
     width: 250px;
-	} 
+	}
+	.lk-info .field input[type="text"] {
+    width: 250px;
+	}
 	.login .authorization {
 		width: 220px;
 	}
@@ -877,6 +880,18 @@ button.change-psw {
 	.signup .section-title, .login .section-title {
 		margin-bottom: 0px;
 	}
+	.info-form .field .additional {
+		margin: 5px 0px -5px 0px;
+	}
+	.info-form .field {
+		margin-bottom: 10px;
+	}
+	.info-form .change-psw {
+		margin: 0 auto;
+		width: 180px;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
 } 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	.arrow, .arrow_active, .arrow_first {
@@ -888,6 +903,9 @@ button.change-psw {
 	.signup .field input[type="text"] {
     width: 300px;
 	} 
+	.lk-info .field input[type="text"] {
+    width: 300px;
+	}
 }
 @media screen and (max-width: 991px) {
 	.arrow, .arrow_active, .arrow_first {

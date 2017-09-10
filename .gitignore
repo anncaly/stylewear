@@ -1,2 +1,4 @@
 Thumbs.db
 node_modules
+src/index.html
+build/index.html
