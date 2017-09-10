@@ -877,3 +877,138 @@ button.change-psw {
 .delivery_table td {
   width: 18%;
 }
+
+.breadcrumbs a.active {
+  color: #016600;
+}
+
+.arrow, .arrow_first, .arrow_active {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  padding: 10px;
+  margin: 0 70px 0 0;
+  text-decoration: none;
+  width: 276px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.arrows {
+  margin-left: -15px;
+}
+
+.arrow, .arrow_first {
+  background: #e8e8e8;
+  color: #666666;
+}
+
+.arrow_active {
+  background: #3f671d;
+  color: #fff;
+}
+
+.arrow:before {
+  display: inline-block;
+  border: 20px solid;
+  border-color: transparent transparent transparent #fff;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -1px;
+  top: 0;
+  content: "";
+}
+
+.arrow.arrow_active:after {
+  border-color: transparent transparent transparent #3f671d;
+}
+
+.arrow:after, .arrow_first:after {
+  display: inline-block;
+  border: 20px solid;
+  border-color: transparent transparent transparent #e8e8e8;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  content: "";
+  z-index: 99;
+}
+
+.delivery_info {
+  font-size: 15px;
+}
+
+.delivery_status {
+  font-size: 17px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .arrow, .arrow_active, .arrow_first {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .arrow, .arrow_active, .arrow_first {
+    width: 335px;
+    margin-bottom: 10px;
+  }
+  .order_number, .confirm_delivery {
+    margin-top: 20px;
+  }
+  .delivery_status {
+    margin: 20px 0px 14px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .order_number, .confirm_delivery {
+    margin-top: 50px;
+  }
+  .delivery_status {
+    margin: 10px 0px 14px;
+  }
+}
+
+.confirm_delivery button {
+  background-color: #3f671d;
+  width: 310px;
+  height: 40px;
+  border: 1px solid #3f671d;
+  color: #fff;
+  font-size: 17px;
+}
+
+.order_number {
+  font-size: 23px;
+}
+
+.order_number span {
+  font-weight: bold;
+}
+
+.delivery_time {
+  margin-top: 25px;
+  font-size: 17px;
+}
+
+.delivery_time span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.delivery_info {
+  line-height: 14px;
+}
+
+.delivery_info a {
+  color: #cfd9c6;
+  text-decoration: underline;
+}
+
+.delivery_info a span {
+  color: #3f671d;
+}
