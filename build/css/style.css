@@ -399,6 +399,7 @@ label {
   margin: 0 auto;
   width: 140px;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .signup-form {
@@ -1054,6 +1055,19 @@ button.change-psw {
   .login .field, .signup .field {
     margin-bottom: 15px;
   }
+  .lk-info .menu-left-lk {
+    padding-left: 15px;
+  }
+  .lk-info .menu-left-lk li {
+    float: left;
+    margin-right: 5%;
+  }
+  .lk-info .section-title {
+    margin-bottom: 0;
+  }
+  .lk-info h4 {
+    margin: 10px 0px 28px 12px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1062,6 +1076,12 @@ button.change-psw {
   }
   .delivery_status {
     margin: 10px 0px 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lk-info-item {
+    width: 300px;
   }
 }
 
