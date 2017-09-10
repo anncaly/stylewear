@@ -386,9 +386,17 @@ body {
     padding-right: 10px;
 }
 // return order
+
+.return .socials_links_right {
+	top: 40%;
+}
+.return-btn {
+	margin: 0 auto;
+	width: 230px;
+}
 .return-btn button {
 	@extend .green-button;
-	width: 215px;
+	width: 230px;
 	height: 33px;
 }
 .return-form .field {
@@ -397,7 +405,6 @@ body {
 	width: 100%;
 }
 .return-form textarea {
-  width: 100%;
   height: 230px;
   resize: none;
   border: 1px solid #e2e2e2;
@@ -912,7 +919,7 @@ button.remove_favorite {
 	font-size: 17px;
 }
 @media screen and (max-width: 499px) {
-	.login .field, .signup .field, .lk-info .field {
+	.login .field, .signup .field, .lk-info .field, .return .field {
 		width: 255px;
 		margin: 0 auto;
 		padding-left: 0px;
@@ -924,6 +931,9 @@ button.remove_favorite {
     width: 250px;
 	}
 	.lk-info .field input[type="text"] {
+    width: 250px;
+	}
+	.return .field input[type="text"] {
     width: 250px;
 	}
 	.login .authorization {
@@ -957,6 +967,13 @@ button.remove_favorite {
 	.socials_links_right {
 		display: none;
 	}
+	.return-form textarea {
+  	width: 250px;
+	} 
+	.return-form {
+		width: 280px;
+		margin: 0 auto;
+	}
 } 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	.arrow, .arrow_active, .arrow_first {
@@ -969,6 +986,9 @@ button.remove_favorite {
     width: 300px;
 	} 
 	.lk-info .field input[type="text"] {
+    width: 300px;
+	}
+	.return .field input[type="text"] {
     width: 300px;
 	}
 	.product_item_favorites {
@@ -989,6 +1009,13 @@ button.remove_favorite {
 	.remove_favorite:before {
 		left: 70px;
 	}
+	.return-form textarea {
+		width: 353px;
+	}
+	.return-form {
+		width: 400px;
+		margin: 0 auto;
+	}
 }
 @media screen and (max-width: 991px) {
 	.order_number, .confirm_delivery {
@@ -997,7 +1024,7 @@ button.remove_favorite {
 	.delivery_status {
     margin: 20px 0px 14px;
 	}
-	.login .field, .signup .field {
+	.login .field, .signup .field, .return .field {
     margin-bottom: 15px;
 	}
 	.lk-info .menu-left-lk {
@@ -1021,13 +1048,15 @@ button.remove_favorite {
 	.delivery_status {
 		margin: 10px 0px 14px;
 	}
+	.return-form textarea {
+  	width: 100%;
+	} 
 }
 @media screen and (min-width: 1200px) {
 	.lk-info-item {
 		width: 300px;
 	}
 }
-
 .confirm_delivery button {
 	background-color: #3f671d;
 	width: 310px;
